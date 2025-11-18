@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Princess ❤️</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Center container */
+    .container {
+      text-align: center;
+      padding: 50px 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Floating hearts */
+    .heart {
+      position: fixed;
+      bottom: -20px;
+      color: pink;
+      animation: floatUp 6s linear infinite;
+      font-size: 20px;
+      opacity: 0.7;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(0); opacity: 0.8; }
+      100% { transform: translateY(-100vh); opacity: 0; }
+    }
+
+    /* Photo slideshow */
+    .slideshow {
+      width: 90%;
+      max-width: 350px;
+      margin: 20px auto;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(255,255,255,0.3);
+    }
+
+    .slideshow img {
+      width: 100%;
+      animation: fadeSlide 10s infinite;
+    }
+
+    @keyframes fadeSlide {
+      0% {opacity: 1;}
+      33% {opacity: 0;}
+      66% {opacity: 1;}
+    }
+
+    /* Message */
+    .message {
+      margin-top: 30px;
+      font-size: 22px;
+      line-height: 32px;
+      animation: fadeIn 3s ease-in-out;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background music -->
+  <audio autoplay loop>
+    <source src="https://youtu.be/0EurcaeUXKk" type="audio/mpeg">
+  </audio>
+
+  <div class="container">
+
+    <h1 style="font-size:38px;">For My Love ❤️</h1>
+
+    <!-- Slideshow -->
+    <div class="slideshow">
+      <img src="images/IMG_20240829_160440_954.jpg">
+      <img src="images/Screenshot_2025-05-25-02-39-13-36_92460851df6f172a4592fca41cc2d2e6.jpg">
+      <img src="images/pic1.jpg.jpg">
+    </div>
+
+    <!-- Romantic message -->
+    <div class="message">
+      Hello my Babaa,<br><br>
+      I made this little page just for my princess.<br>
+      Every moment with you feels special.<br>
+      Every smile of yours feels like magic.<br><br>
+      Thank you for being the best part of my life. ❤️
+    </div>
+
+  </div>
+
+  <!-- Floating hearts animation (auto-generated) -->
+  <script>
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.innerHTML = "❤️";
+      heart.classList.add("heart");
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.fontSize = (Math.random() * 25 + 10) + "px";
+      document.body.appendChild(heart);
+
+      setTimeout(() => { heart.remove(); }, 6000);
+    }
+    setInterval(createHeart, 400);
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
